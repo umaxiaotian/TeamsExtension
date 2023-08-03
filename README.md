@@ -1,73 +1,73 @@
-# echo-bot
+# ObaBot
 
-Bot Framework v4 echo bot sample
+Bot Framework v4をベースにしています。
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that accepts input from the user and echoes it back.
+このボットは[Bot Framework](https://dev.botframework.com)を使用して作成されたもので、ユーザーからの入力を受け取り、それをGPTで返すシンプルなBOTです。
 
-## Prerequisites
+## 前提条件
 
-- [Node.js](https://nodejs.org) version 16.16.0 or higher
+- [Node.js](https://nodejs.org) バージョン 16.16.0 以上
 
     ```bash
-    # determine node version
+    # Node.jsのバージョン確認
     node --version
     ```
 
-## To try this sample
+## 試し方
 
-- Clone the repository
+- リポジトリをクローン
 
     ```bash
     git clone https://github.com/microsoft/botbuilder-samples.git
     ```
 
-- In a terminal, navigate to `samples/javascript_nodejs/02.echo-bot`
+- ターミナルで`samples/javascript_nodejs/02.obabot`ディレクトリに移動（ディレクトリ名を'obabot'に変更）
 
     ```bash
-    cd samples/javascript_nodejs/02.echo-bot
+    cd samples/javascript_nodejs/02.obabot
     ```
 
-- Install modules
+- モジュールをインストール
 
     ```bash
     npm install
     ```
 
-- Start the bot
+- ボットを起動
 
     ```bash
     npm start
     ```
 
-## Testing the bot using Bot Framework Emulator
+## Bot Framework Emulatorを使ったボットのテスト
 
-[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
+[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator)は、ボット開発者がローカルホストまたはトンネル経由でリモートで実行中のボットをテストおよびデバッグするためのデスクトップアプリケーションです。
 
-- Install the latest Bot Framework Emulator from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
+- [こちら](https://github.com/Microsoft/BotFramework-Emulator/releases)から最新のBot Framework Emulatorをインストール
 
-### Connect to the bot using Bot Framework Emulator
+### Bot Framework Emulatorを使用してボットに接続
 
-- Launch Bot Framework Emulator
+- Bot Framework Emulatorを起動
 - File -> Open Bot
-- Enter a Bot URL of `http://localhost:3978/api/messages`
+- ボットのURLに `http://localhost:3978/api/messages` を入力
 
-## Interacting with the bot
+## ボットとの対話
 
-Enter text in the emulator.  The text will be echoed back by the bot.
+エミュレーターにテキストを入力してください。ボットによって入力されたテキストがエコーバックされます。
 
-## Deploy the bot to Azure
+## ボットをAzureにデプロイ
 
-To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
+Azureにボットをデプロイする方法の詳細については、[Deploy your bot to Azure](https://aka.ms/azuredeployment) を参照してください。
 
-## Further reading
+## 追記資料
 
-- [Bot Framework Documentation](https://docs.botframework.com)
-- [Bot Basics](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
-- [Activity processing](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
-- [Azure Bot Service Introduction](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
-- [Azure Bot Service Documentation](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0)
+- [Bot Frameworkドキュメント](https://docs.botframework.com)
+- [Botの基本](https://docs.microsoft.com/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0)
+- [アクティビティ処理](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-activity-processing?view=azure-bot-service-4.0)
+- [Azure Bot Service入門](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0)
+- [Azure Bot Serviceドキュメント](https://docs.microsoft.com/azure/bot-service/?view=azure-bot-service-4.0)
 - [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
 - [Azure Portal](https://portal.azure.com)
-- [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
+- [チャネルとBot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
 - [Restify](https://www.npmjs.com/package/restify)
 - [dotenv](https://www.npmjs.com/package/dotenv)
