@@ -18,13 +18,13 @@ Bot Framework v4をベースにしています。
 - リポジトリをクローン
 
     ```bash
-    git clone https://github.com/microsoft/botbuilder-samples.git
+    git clone https://github.com/umaxiaotian/TeamsExtension.git
     ```
 
-- ターミナルで`samples/javascript_nodejs/02.obabot`ディレクトリに移動（ディレクトリ名を'obabot'に変更）
+- ターミナルで`TeamsExtension`ディレクトリに移動（ディレクトリ名を'obabot'に変更）
 
     ```bash
-    cd samples/javascript_nodejs/02.obabot
+    cd TeamsExtension
     ```
 
 - モジュールをインストール
