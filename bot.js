@@ -2,7 +2,6 @@ const { ActivityHandler, MessageFactory, ActivityTypes, CardFactory } = require(
 const axios = require('axios');
 let conversationIsStart = false; // 会話が始まっているかどうか判定します。 
 let conversationData = {}; // メモリ内の変数に保存するためのオブジェクト
-
 const welcomeText = `
 ## こんにちは! Obabotです。
 
@@ -56,8 +55,6 @@ const menu = CardFactory.heroCard(
     ])
 );
 class ObaBot extends ActivityHandler {
-
-
     async postToQuestionAPI(userMessage, history) {
         const url = 'http://127.0.0.1:8888/question';
 
@@ -79,22 +76,16 @@ class ObaBot extends ActivityHandler {
     }
     constructor() {
         super();
-
-
         // メッセージと他のアクティビティタイプについては、https://aka.ms/about-bot-activity-messageを参照
         this.onMessage(async (context, next) => {
-
-
             // 正規表現パターンを定義
             const pattern = /^(#.*\?#|@.*|#.*)$/;
             const userMessage = context.activity.text;
-
             // 文字列が正規表現パターンにマッチするか判定
             if (pattern.test(userMessage)) {
                 // 文字列が正規表現パターンにマッチするか判定
                 switch (userMessage) {
                     case '#TALKSTART':
-
                         conversationIsStart = true
                         await context.sendActivity(MessageFactory.text(NewSessionText, NewSessionText));
                         break;
@@ -117,7 +108,6 @@ class ObaBot extends ActivityHandler {
                             await context.sendActivity(MessageFactory.text(conversationNone, conversationNone));
                         }
                 }
-
             } else {
                 //コマンド操作ではなければ
                 if (conversationIsStart == true) {
