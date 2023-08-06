@@ -63,7 +63,6 @@ class ObaBot extends ActivityHandler {
 
         // JSONデータを作成
         const data = {
-            pageid: '2bb791252d7b4cb1afd51ccb24bfcd9c',
             qa: userMessage,
             history: history
         };
